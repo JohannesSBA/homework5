@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("/images/paper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  margin: 10px;
+  position: absolute;
+  top: 0;
+}
+
+#length {
+  position: absolute;
+  top: 50px;
+}
+#desc {
+  position: absolute;
+  top: 80px;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftAfter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: width 1s ease-in-out;
+}
+
+img {
+  width: 450px;
+}
+
+.searchArea {
+  display: flex;
+}
+
+input {
+  padding: 20px;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(240, 239, 239);
+  width: 450px;
+}
+
+button {
+  border-radius: 2rem;
+  width: 5rem;
+  margin-left: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: rgb(12, 95, 220);
+  color: white;
+}
+
+.right {
+  width: 0%;
+}
+
+.rightAfter {
+  width: 50%;
+  max-height: 100%;
+  overflow: scroll;
+  transform: translateY(120px);
+  margin-bottom: 150px;
+  border-radius: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.articleCard {
+  background-color: #f3f3f3;
+  border: #a3a3a3 solid 1px;
+  margin: 10px 50px;
+  padding: 56px 16px 16px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 300ms linear;
+}
+
+.newArticle {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.articleCard:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+h4 {
+  position: relative;
+  margin: 12px 0 4px 0;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  color: black;
+}
+
+small {
+  color: gray;
+  font-size: 10px;
+}
+
+.abstract {
+  margin-top: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
