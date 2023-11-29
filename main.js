@@ -37,7 +37,7 @@ function execute(input) {
       data.response.docs.forEach(function (article, index) {
         setTimeout(function () {
           const articleElement = document.createElement("div");
-          articleElement.className = "articleCard newArticle"; // Added the 'newArticle' class
+          articleElement.className = "articleCard newArticle"; 
           articleElement.innerHTML = `<a href="${
             article.web_url
           }" target="_blank"><div class="articleCardContent"> <h4>${
@@ -55,8 +55,8 @@ function execute(input) {
             </div></a>`;
 
           result.appendChild(articleElement);
-          articleElement.classList.add("fadeInUp"); // Add the 'fadeInUp' class to trigger the animation
-        }, 500 * index); // Delay increases for each article (1000 milliseconds = 1 second)
+          articleElement.classList.add("fadeInUp");
+        }, 500 * index);
       });
     })
     .catch((error) => {
