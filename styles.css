@@ -13,7 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-image: url("/images/paper.jpeg");
+  background-image: url("images/paper.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
